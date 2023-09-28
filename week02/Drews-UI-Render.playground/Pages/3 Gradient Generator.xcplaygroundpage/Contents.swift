@@ -30,6 +30,6 @@ let image = renderer.image { (context) in
             context.fill(CGRect(x: x, y: y, width: 5, height: 5))
         }
     }
-}
+}  
 
 image
