@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
         
@@ -21,6 +22,11 @@ struct ContentView: View {
                 .tabItem{
                     Image(systemName: "pencil.and.outline")
                     Text("Squiggle Lines")
+                }
+            BrokeImage()
+                .tabItem{
+                    Image(systemName: "photo")
+                    Text("Random Image")
                 }
         }
     }

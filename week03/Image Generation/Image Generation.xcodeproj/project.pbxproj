@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0D4624012AC5471800088F4B /* Image_GenerationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4624002AC5471800088F4B /* Image_GenerationApp.swift */; };
-		0D4624032AC5471800088F4B /* Broken Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4624022AC5471800088F4B /* Broken Image.swift */; };
+		0D4624032AC5471800088F4B /* BrokeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4624022AC5471800088F4B /* BrokeImage.swift */; };
 		0D4624052AC5471900088F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4624042AC5471900088F4B /* Assets.xcassets */; };
 		0D4624082AC5471900088F4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4624072AC5471900088F4B /* Preview Assets.xcassets */; };
-		0D46240F2AC54A2D00088F4B /* ImageHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D46240E2AC54A2D00088F4B /* ImageHolder.swift */; };
 		0D4624132AC54DD400088F4B /* CanvasTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4624122AC54DD400088F4B /* CanvasTest.swift */; };
 		0D4624152AC561A600088F4B /* SquiggleDraws.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4624142AC561A600088F4B /* SquiggleDraws.swift */; };
 		0D4624172AC5645100088F4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4624162AC5645100088F4B /* ContentView.swift */; };
@@ -20,10 +19,9 @@
 /* Begin PBXFileReference section */
 		0D4623FD2AC5471800088F4B /* Image Generation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Generation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4624002AC5471800088F4B /* Image_GenerationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_GenerationApp.swift; sourceTree = "<group>"; };
-		0D4624022AC5471800088F4B /* Broken Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Broken Image.swift"; sourceTree = "<group>"; };
+		0D4624022AC5471800088F4B /* BrokeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokeImage.swift; sourceTree = "<group>"; };
 		0D4624042AC5471900088F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D4624072AC5471900088F4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0D46240E2AC54A2D00088F4B /* ImageHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHolder.swift; sourceTree = "<group>"; };
 		0D4624122AC54DD400088F4B /* CanvasTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasTest.swift; sourceTree = "<group>"; };
 		0D4624142AC561A600088F4B /* SquiggleDraws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquiggleDraws.swift; sourceTree = "<group>"; };
 		0D4624162AC5645100088F4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,9 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				0D4624002AC5471800088F4B /* Image_GenerationApp.swift */,
-				0D4624022AC5471800088F4B /* Broken Image.swift */,
 				0D4624162AC5645100088F4B /* ContentView.swift */,
-				0D46240E2AC54A2D00088F4B /* ImageHolder.swift */,
+				0D4624022AC5471800088F4B /* BrokeImage.swift */,
 				0D4624122AC54DD400088F4B /* CanvasTest.swift */,
 				0D4624142AC561A600088F4B /* SquiggleDraws.swift */,
 				0D4624042AC5471900088F4B /* Assets.xcassets */,
@@ -149,11 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D4624032AC5471800088F4B /* Broken Image.swift in Sources */,
+				0D4624032AC5471800088F4B /* BrokeImage.swift in Sources */,
 				0D4624152AC561A600088F4B /* SquiggleDraws.swift in Sources */,
 				0D4624172AC5645100088F4B /* ContentView.swift in Sources */,
 				0D4624012AC5471800088F4B /* Image_GenerationApp.swift in Sources */,
-				0D46240F2AC54A2D00088F4B /* ImageHolder.swift in Sources */,
 				0D4624132AC54DD400088F4B /* CanvasTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
