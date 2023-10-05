@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Conversioner
 //
-//  Created by Drew Brown on 10/5/23.
+//  Created by Drew Brown on 10/4/23.
 //
 
 
@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var inputValue = 0.0
     @State private var inputUnits = "km"
     @State private var outputUnits = "mi"
+    @FocusState private var inputIsFocused: Bool
     
     
     let units = ["m", "km", "ft", "y", "mi"]
@@ -60,6 +61,8 @@ struct ContentView: View {
                 Section{
                     TextField("Input value", value: $inputValue, format: .number, prompt: Text("Enter a number"))
                         .keyboardType(.decimalPad)
+                        .focused($inputIsFocused)
+
                     Picker("Unit", selection: $inputUnits){
                         ForEach(units, id: \.self) {
                             Text($0)
@@ -69,7 +72,20 @@ struct ContentView: View {
                 } header: {
                     Text("Input value")
                 }
-                
+                HStack{
+                    Spacer()
+                    Button {
+                        let tempStore = inputUnits
+                        inputValue = outputValue
+                        inputUnits = outputUnits
+                        outputUnits = tempStore
+                    } label: {
+                        HStack{
+                            Text("Swap")
+                            Image(systemName: "arrow.triangle.swap")
+                        }
+                    }
+                }
                 
                 Section{
                     Picker("Unit", selection: $outputUnits){
@@ -83,8 +99,21 @@ struct ContentView: View {
                 } header: {
                     Text("Converted value")
                 }
+                
+                
+                
             }
             .navigationTitle("Conversioner")
+            
+           
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Done") {
+                        inputIsFocused = false
+                    }
+                }
+            }
         }
     }
 }
