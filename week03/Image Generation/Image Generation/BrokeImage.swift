@@ -20,22 +20,33 @@ struct BrokeImage: View {
     
     var body: some View {
         VStack{
-            Text("Flips through 3 random images")
-                .font(.title2)
+            VStack{
+            Text("Random images")
+                .font(.title)
                 .fontWeight(.bold)
-                .padding(.bottom, 5.0)
+                .padding(.bottom, 5)
             Text("(No longer broken)")
                 .font(.subheadline)
                 .foregroundColor(Color.secondary)
-                .padding(.bottom, 30.0)
+                .padding(.bottom, 20.0)
             Image(displayedImage)
                 .resizable()
-                .frame(width: 128, height: 128)
+                .frame(width: 250, height: 250)
                 .clipShape(RoundedRectangle(cornerRadius: 25))
+            Text("\(displayedImage)")
+                .foregroundColor(.secondary)
+            Spacer()
             Button(action: generateImage) {
                 Text("Generate Image")
+                    .font(.title2)
+                    .fontWeight(.regular)
             }
-            .buttonStyle(.bordered)
+            .foregroundColor(.white)
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(.green)
+            .cornerRadius(15)
+            .padding()
         }
         
     }
