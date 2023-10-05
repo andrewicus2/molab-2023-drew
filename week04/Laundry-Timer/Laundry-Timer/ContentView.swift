@@ -7,6 +7,8 @@
 
 //  Built off https://github.com/molab-itp/04-Audio-State-Demo
 
+//  Want this to be in minutes
+
 import SwiftUI
 
 struct ContentView: View {
