@@ -39,13 +39,7 @@ struct ContentView: View {
             }
             .pickerStyle(.segmented)
             .padding()
-            
-            if(timerType.rawValue == "wash"){
-                vm.minutes = 40
-            } else {
-                vm.minutes = 60
-            }
-            
+
             HStack {
                 Button("Start") {
                     vm.start(minutes: vm.minutes)
@@ -61,6 +55,15 @@ struct ContentView: View {
         }
         .onReceive(timer) { _ in
             vm.updateCountdown()
+        }
+        .onChange(of: timerType) {
+            
+            if(timerType.rawValue == "wash"){
+                vm.minutes = 40
+            } else {
+                vm.minutes = 60
+            }
+            
         }
         
     }
