@@ -40,8 +40,10 @@ struct ContentView: View {
             .pickerStyle(.segmented)
             .padding()
             
-            if(timerType.rawValue == "Wash"){
+            if(timerType.rawValue == "wash"){
+                vm.minutes = 40
             } else {
+                vm.minutes = 60
             }
             
             HStack {
