@@ -1,0 +1,266 @@
+//
+//  SettingsRecreation.swift
+//  NavigationApp
+//
+//  Created by itpstudent on 10/11/23.
+//  Copyright © 2023 itpstudent. All rights reserved.
+//
+
+// !! PROBLEM: I want to allow the user to edit the device name. How can I pass the deviceName between two views? !!
+
+
+
+import SwiftUI
+
+struct SettingsRecreation: View {
+    
+    
+
+    var body: some View {
+        List {
+            Section{
+                NavigationLink(destination: Text("Wi-Fi")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.blue)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "wifi")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Wi-Fi")
+                        Spacer()
+                        Text("nyu")
+                            .foregroundColor(.secondary)
+                    }
+                }
+                
+                NavigationLink(destination: Text("Bluetooth")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.blue)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "star.fill")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Bluetooth")
+                        Spacer()
+                        Text("On")
+                            .foregroundColor(.secondary)
+                    }
+                }
+                
+                NavigationLink(destination: Text("Cellular")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.green)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "phone.fill")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Cellular")
+                    }
+                }
+                
+                NavigationLink(destination: Text("Personal Hotspot")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.green)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "link")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Personal Hotspot")
+                    }
+                }
+            }
+            
+            Section {
+                NavigationLink(destination: Text("Notifications")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.red)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "bell.fill")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Notifications")
+                    }
+                }
+                
+                NavigationLink(destination: Text("Sounds & Haptics")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.pink)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "speaker.2.fill")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Sounds & Haptics")
+                    }
+                }
+                
+                NavigationLink(destination: Text("Focus")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color(red: 0.35,green: 0.35, blue: 0.82))
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "moon.fill")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Focus")
+                    }
+                }
+                
+                NavigationLink(destination: Text("Screen Time")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color(red: 0.35,green: 0.35, blue: 0.82))
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "timer")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Screen Time")
+                    }
+                }
+            }
+            
+            Section {
+                NavigationLink(destination: General()) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.gray)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "gear")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("General")
+                    }
+                }
+                
+                NavigationLink(destination: Text("Control Center")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.gray)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "slider.horizontal.3")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Control Center")
+                    }
+                }
+            }
+        }
+        .listStyle(GroupedListStyle())
+        .navigationBarTitle("Settings")
+    }
+}
+
+struct General: View {
+    var body: some View {
+        List {
+            Section {
+                NavigationLink(destination: About()) {
+                    Text("About")
+                }
+                Text("Software Update")
+            }
+            Section {
+                Text("AirDrop")
+                Text("AirPlay & Handoff")
+                Text("Picture in Picture")
+                Text("CarPlay")
+            }
+            Section {
+                Text("iPhone Storage")
+                Text("Background App Refresh")
+            }
+            Section {
+                Text("Date & Time")
+                Text("Keyboard")
+                Text("Fonts")
+                Text("Language & Region")
+                Text("Dictionary")
+
+            }
+        }
+        .listStyle(GroupedListStyle())
+        .navigationBarTitle("General")
+    }
+}
+
+struct About: View {
+    @State var deviceName = "Default Name"
+
+    
+    var body: some View {
+        Form {
+            Section {
+                NavigationLink(destination: EditName(deviceName: deviceName)){
+                    HStack {
+                        Text("Name")
+                        Spacer()
+                        Text(deviceName)
+                            .foregroundColor(Color.secondary)
+                    }
+                }
+                HStack {
+                    Text("iOS Version")
+                    Spacer()
+                    Text("13.2.3")
+                        .foregroundColor(Color.secondary)
+                }
+                HStack {
+                    Text("Model Name")
+                    Spacer()
+                    Text("iPhone SE (2nd Generation)")
+                        .foregroundColor(Color.secondary)
+                }
+                Text("Model Number")
+            }
+        }
+    .navigationBarTitle("About")
+    }
+}
+
+
+struct EditName: View {
+    
+    @State var deviceName: String
+
+
+    var body: some View {
+        Form {
+            TextField(
+              "Hint Text",
+              text: $deviceName
+            )
+        }
+    .navigationBarTitle("Name")
+    }
+}
+
+struct SettingsRecreation_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingsRecreation()
+    }
+}
