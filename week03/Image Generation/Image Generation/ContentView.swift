@@ -23,11 +23,11 @@ struct ContentView: View {
                     Image(systemName: "pencil.and.outline")
                     Text("Squiggle Lines")
                 }
-            BrokeImage()
-                .tabItem{
-                    Image(systemName: "photo")
-                    Text("Random Image")
-                }
+//            BrokeImage()
+//                .tabItem{
+//                    Image(systemName: "photo")
+//                    Text("Random Image")
+//                }
         }
     }
 }

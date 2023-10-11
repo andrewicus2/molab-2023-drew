@@ -23,22 +23,44 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("\(vm.time)")
-                .font(.system(size: 100, weight: .medium, design: .rounded))
-                .padding()
-                .background(.thinMaterial)
-                .cornerRadius(20)
-                .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.gray, lineWidth: 2))
-                .alert("Timer done!", isPresented: $vm.showingAlert) {
-                    Button("Continue", role: .cancel) {}
-                }
-            
             Picker("Timer", selection: $timerType){
                 Text("Wash").tag(timerTypes.wash)
                 Text("Dry").tag(timerTypes.dry)
             }
             .pickerStyle(.segmented)
+            .frame(width: width)
             .padding()
+            Text("\(vm.time)")
+                .font(.system(size: 100, weight: .medium, design: .rounded))
+                .padding()
+                .cornerRadius(20)
+                .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.gray, lineWidth: 1))
+                .alert("Timer done!", isPresented: $vm.showingAlert) {
+                    Button("Continue", role: .cancel) {}
+                }
+            HStack{
+                Button {
+                    vm.minutes -= 1
+                } label: {
+                    Image(systemName:"minus")
+                        .frame(width: 50, height: 50)
+                        .background(.thinMaterial)
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                }
+                
+                Button {
+                    vm.minutes += 1
+                } label: {
+                    Image(systemName:"plus")
+                        .frame(width: 50, height: 50)
+                        .background(.thinMaterial)
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .padding()
+                }
+            }
+            
 
             HStack {
                 Button("Start") {
