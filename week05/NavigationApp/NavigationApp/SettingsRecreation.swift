@@ -6,8 +6,6 @@
 //  Copyright © 2023 itpstudent. All rights reserved.
 //
 
-// !! PROBLEM: I want to allow the user to edit the device name. How can I pass the deviceName between two views? !!
-
 
 
 import SwiftUI
@@ -329,10 +327,14 @@ struct EditName: View {
     var body: some View {
         Form {
             TextField(
-              "Hint Text",
+              "Device Name",
               text: $deviceName
             )
+            .onAppear {
+                UITextField.appearance().clearButtonMode = .whileEditing
+            }
         }
+            
     .navigationBarTitle("Name")
     }
 }
