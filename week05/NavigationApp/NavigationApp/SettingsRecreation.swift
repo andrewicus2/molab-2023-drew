@@ -17,7 +17,7 @@ struct SettingsRecreation: View {
     var body: some View {
         List {
             Section {
-                NavigationLink(destination: Text("User Name")) {
+                NavigationLink(destination: AppleID()) {
                     HStack {
                         Image("memoji-2")
                             .resizable()
@@ -30,7 +30,7 @@ struct SettingsRecreation: View {
                             Text("Apple ID, iCloud+, Media & Purchases")
                                 .font(.caption)
                         }
-                        .padding(.leading, 10.0)
+                        .padding(.leading, 5)
                     }
                 }
                 NavigationLink(destination: Text("Family")) {
@@ -38,7 +38,7 @@ struct SettingsRecreation: View {
                         HStack(spacing: -10){
                             Image("memoji-1")
                                 .resizable()
-                                .frame(width: 28, height: 28)
+                                .frame(width: 30, height: 30)
                                 .background(Color.white)
                                 .clipShape(Circle())
                                 .overlay(
@@ -47,7 +47,7 @@ struct SettingsRecreation: View {
                                 )
                             Image("memoji-4")
                                 .resizable()
-                                .frame(width: 28, height: 28)
+                                .frame(width: 30, height: 30)
                                 .background(Color(red: 0.35,green: 0.35, blue: 0.82))
                                 .clipShape(Circle())
                                 .overlay(
@@ -56,7 +56,7 @@ struct SettingsRecreation: View {
                                 )
                             Image("memoji-3")
                                 .resizable()
-                                .frame(width: 28, height: 28)
+                                .frame(width: 30, height: 30)
                                 .background(Color.white)
                                 .clipShape(Circle())
                                 .overlay(
@@ -336,6 +336,43 @@ struct EditName: View {
         }
             
     .navigationBarTitle("Name")
+    }
+}
+
+struct AppleID: View {
+    var body: some View {
+        VStack{
+            
+            List {
+                Section {
+                    VStack(alignment: .center){
+                        Image("memoji-2")
+                             .resizable()
+                             .frame(width: 100, height: 100)
+                        Text("Test User")
+                            .font(.largeTitle)
+                        Text("testuser@icloud.com")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                }
+                NavigationLink(destination: Text("Personal Information")) {
+                    HStack {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.gray)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(5)
+                            Image(systemName: "person.fill")
+                                .foregroundColor(Color.white)
+                        }
+                        Text("Personal Information")
+                    }
+                }
+            }
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle("Apple ID", displayMode: .inline)
+        }
     }
 }
 
