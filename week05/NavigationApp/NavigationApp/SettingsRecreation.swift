@@ -246,7 +246,6 @@ struct SettingsRecreation: View {
                 }
             }
         }
-        .listStyle(GroupedListStyle())
         .navigationBarTitle("Settings")
     }
 }
@@ -279,7 +278,6 @@ struct General: View {
 
             }
         }
-        .listStyle(GroupedListStyle())
         .navigationBarTitle("General", displayMode: .inline)
     }
 }
@@ -370,7 +368,6 @@ struct AppleID: View {
                     }
                 }
             }
-            .listStyle(GroupedListStyle())
             .navigationBarTitle("Apple ID", displayMode: .inline)
         }
     }
