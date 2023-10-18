@@ -7,14 +7,30 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State private var useRedText = false
+struct GridStack<Content: View>: View {
+    let rows: Int
+    let columns: Int
+    @ViewBuilder let content: (Int, Int) -> Content
+    
     var body: some View {
-        Button("Hello, world!") {
-            useRedText.toggle()
+        VStack {
+            ForEach(0..<rows, id: \.self) { row in
+                HStack {
+                    ForEach(0..<columns, id: \.self) { column in
+                        content(row, column)
+                    }
+                }
+            }
         }
-        // W (what to check) T (true value)  F (false value)
-        .foregroundStyle(useRedText ? .red : .blue)
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        GridStack(rows: 4, columns: 4) { row, col in
+            Image(systemName: "\(row * 4 + col).circle")
+            Text("R\(row) C\(col)")
+        }
     }
 }
 
