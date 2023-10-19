@@ -13,6 +13,8 @@
 		3ACB173B2AE022FE00054FA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB173A2AE022FE00054FA3 /* Preview Assets.xcassets */; };
 		3ACB17442AE0335400054FA3 /* NumbersWithStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB17432AE0335400054FA3 /* NumbersWithStepper.swift */; };
 		3ACB17462AE0347700054FA3 /* DatesAndTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB17452AE0347700054FA3 /* DatesAndTimes.swift */; };
+		3ACB17482AE082D200054FA3 /* WorkingWithDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB17472AE082D200054FA3 /* WorkingWithDates.swift */; };
+		3ACB174A2AE0879700054FA3 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB17492AE0879700054FA3 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		3ACB173A2AE022FE00054FA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3ACB17432AE0335400054FA3 /* NumbersWithStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersWithStepper.swift; sourceTree = "<group>"; };
 		3ACB17452AE0347700054FA3 /* DatesAndTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesAndTimes.swift; sourceTree = "<group>"; };
+		3ACB17472AE082D200054FA3 /* WorkingWithDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithDates.swift; sourceTree = "<group>"; };
+		3ACB17492AE0879700054FA3 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			children = (
 				3ACB17332AE022FE00054FA3 /* BetterRestApp.swift */,
 				3ACB17352AE022FE00054FA3 /* ContentView.swift */,
+				3ACB17492AE0879700054FA3 /* SleepCalculator.mlmodel */,
+				3ACB17472AE082D200054FA3 /* WorkingWithDates.swift */,
 				3ACB17452AE0347700054FA3 /* DatesAndTimes.swift */,
 				3ACB17432AE0335400054FA3 /* NumbersWithStepper.swift */,
 				3ACB17372AE022FE00054FA3 /* Assets.xcassets */,
@@ -143,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ACB17482AE082D200054FA3 /* WorkingWithDates.swift in Sources */,
 				3ACB17462AE0347700054FA3 /* DatesAndTimes.swift in Sources */,
 				3ACB17442AE0335400054FA3 /* NumbersWithStepper.swift in Sources */,
+				3ACB174A2AE0879700054FA3 /* SleepCalculator.mlmodel in Sources */,
 				3ACB17362AE022FE00054FA3 /* ContentView.swift in Sources */,
 				3ACB17342AE022FE00054FA3 /* BetterRestApp.swift in Sources */,
 			);
