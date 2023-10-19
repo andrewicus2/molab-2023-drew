@@ -10,6 +10,7 @@
 //  GuessTheFlag Base Code from: https://www.hackingwithswift.com/100/swiftui
 
 //  TODO: json storage of score history
+//  TODO: animation of score plus or minus
 
 import SwiftUI
 
