@@ -42,16 +42,12 @@ struct ContentView: View {
     @State private var showingAlert = false
     
     // Stored values
-    
     @AppStorage("HIGH_SCORE") var highScore = 0
     @AppStorage("LAST_ATTEMPT") var lastAttempt = 0
     @AppStorage("FIRST_TIME") var firstTime = true
 
+    // Attempt at animation
     @State private var rightAnswer = true
-    
-    @State private var showingScore = false
-    @State private var scoreTitle = ""
-    @State private var scoreBody = ""
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     
@@ -178,8 +174,6 @@ struct ContentView: View {
                 }
                 else if self.timeRemaining > 0 && self.timerIsRunning {
                     self.timeRemaining -= 1
-                    
-                    print("Time Remaining:", self.timeRemaining)
                 }
             }
             .alert("Game Over!", isPresented: $showingAlert) {
@@ -189,21 +183,15 @@ struct ContentView: View {
             }
             .navigationTitle("Guess the Flag")
             .navigationBarTitleDisplayMode(gameRunning ? .inline : .large)
-
-            .font(.system(size: 20, design: .rounded))
         }
     }
     
     func flagTapped(_ number: Int) {
          if number == correctAnswer {
-            scoreTitle = "Correct"
-            scoreBody = "Nice job!"
             rightAnswer = true
             score += 1
         
         } else {
-            scoreTitle = "Wrong"
-            scoreBody = "You tapped the flag of \(countries[number])"
             rightAnswer = false
             score -= 1
         }
