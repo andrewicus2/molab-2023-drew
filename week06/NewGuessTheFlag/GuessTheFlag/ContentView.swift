@@ -13,6 +13,8 @@
 
 import SwiftUI
 
+// Helper struct for repeated view (flag images)
+
 struct FlagImage: View {
     var imgSrc = ""
     
@@ -24,6 +26,30 @@ struct FlagImage: View {
             .shadow(radius: 2)
             .frame(maxWidth: .infinity)
             .aspectRatio(contentMode: .fit)
+    }
+}
+
+// Helper struct for repeated view (score widgets)
+
+struct counterWidget: View {
+    var title = ""
+    var value = 0
+    var type = ""
+    
+    var body: some View {
+        VStack{
+            if(type == "Image"){
+                Image(systemName:"\(title)")
+            } else {
+                Text(title)
+            }
+            Text("\(value)")
+                .font(.system(size: 50, weight: .bold))
+        }
+        .padding()
+        .frame(maxWidth: .infinity, maxHeight: 150)
+        .background(.thinMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 }
 
@@ -63,33 +89,22 @@ struct ContentView: View {
                 VStack {
                     if(gameRunning) {
                         HStack {
-                            VStack{
-                                Image(systemName:"clock")
-                                Text("\(timeRemaining)")
-                                    .font(.system(size: 50, weight: .bold))
-                            }
-                            .padding()
-                            .frame(maxWidth: .infinity, maxHeight: 150)
-                            .background(.thinMaterial)
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            counterWidget(title: "clock", value: timeRemaining, type: "Image")
                             Spacer()
-                            VStack{
-                                Image(systemName:"checkmark")
-                                Text("\(score)")
-                                    .font(.system(size: 50, weight: .bold))
-                                    .foregroundStyle(rightAnswer ? .green : .red)
-                            }
-                            .padding()
-                            .frame(maxWidth: .infinity, maxHeight: 150)
-                            .background(.thinMaterial)
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            counterWidget(title: "checkmark", value: score, type: "Image")
+
+//                            VStack{
+//                                Image(systemName:"checkmark")
+//                                Text("\(score)")
+//                                    .font(.system(size: 50, weight: .bold))
+//                                    .foregroundStyle(rightAnswer ? .green : .red)
+//                            }
+//                            .padding()
+//                            .frame(maxWidth: .infinity, maxHeight: 150)
+//                            .background(.thinMaterial)
+//                            .clipShape(RoundedRectangle(cornerRadius: 20))
                         }
                         .frame(maxWidth: .infinity)
-                        
-
-//                        Text("\(scoreTitle)")
-//                        Text("\(scoreBody)")
-                        
                         
                         VStack(spacing: 15) {
                             VStack {
@@ -115,25 +130,11 @@ struct ContentView: View {
                     } else {
                         VStack {
                             HStack {
-                                VStack{
-                                    Text("High Score")
-                                    Text("\(highScore)")
-                                        .font(.system(size: 50, weight: .bold))
-                                }
-                                .padding()
-                                .frame(maxWidth: .infinity, maxHeight: 150)
-                                .background(.thinMaterial)
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
+                                counterWidget(title: "High Score", value: highScore, type: "Text")
+                                
                                 Spacer()
-                                VStack{
-                                    Text("Last Attempt")
-                                    Text("\(lastAttempt)")
-                                        .font(.system(size: 50, weight: .bold))
-                                }
-                                .padding()
-                                .frame(maxWidth: .infinity, maxHeight: 150)
-                                .background(.thinMaterial)
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
+                                
+                                counterWidget(title: "Last Attempt", value: lastAttempt, type: "Text")
                             }
                             
                             Spacer()
@@ -149,16 +150,18 @@ struct ContentView: View {
                                 } else {
                                     Text("Game Over!")
                                 }
-                                Button(firstTime ? "Play" : "Play Again") {
+                                Button(action: {
                                     timerIsRunning = true
                                     gameRunning = true
+                                }) {
+                                    Text(firstTime ? "Play" : "Play Again")
+                                    .frame(maxWidth: .infinity, maxHeight: 49)
+                                    .foregroundStyle(.white)
+                                    .background(.green)
+                                    .cornerRadius(10)
+                                    .font(.system(size: 20, weight: .bold))
                                 }
-                                .padding()
-                                .frame(maxWidth:.infinity)
-                                .background(.green)
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
-                                .foregroundStyle(.white)
-                                .font(.system(size: 20, weight: .bold))
+                                
                             }
                         }
                     }
@@ -205,10 +208,9 @@ struct ContentView: View {
     }
     
     func resetGame() {
-        countries.shuffle()
-        correctAnswer = Int.random(in: 0...2)
+        askQuestion()
         timeRemaining = 15
-        self.timerIsRunning.toggle()
+        timerIsRunning = false
         gameRunning = false
         lastAttempt = score
         if(lastAttempt > highScore){
