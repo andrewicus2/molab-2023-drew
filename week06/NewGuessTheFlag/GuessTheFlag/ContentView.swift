@@ -2,12 +2,14 @@
 //  ContentView.swift
 //  GuessTheFlag
 //
-//  Created by Drew Brown on 10/5/23.
+//  Created by Drew Brown on 10/17/23.
 //
 
 //  App Storage tutorial: https://www.youtube.com/watch?v=OLyGYcSw9Bs
 //  Timer Base Code from: https://github.com/molab-itp/05-TimerDemo/tree/main
 //  GuessTheFlag Base Code from: https://www.hackingwithswift.com/100/swiftui
+
+//  TODO: json storage of score history
 
 import SwiftUI
 
@@ -38,6 +40,8 @@ struct ContentView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @State private var showingAlert = false
+    
+    // Stored values
     
     @AppStorage("HIGH_SCORE") var highScore = 0
     @AppStorage("LAST_ATTEMPT") var lastAttempt = 0
