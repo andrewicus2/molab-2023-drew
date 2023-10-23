@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    @State private var score = 0
+    
     var body: some View {
         NavigationStack {
             List {
@@ -26,6 +28,7 @@ struct ContentView: View {
                 }
                 
                 Section {
+                    Text("Score: \(score)")
                     ForEach(usedWords, id: \.self) { word in
                         HStack {
                             Image(systemName: "\(word.count).circle")
@@ -42,13 +45,30 @@ struct ContentView: View {
             } message: {
                 Text(errorMessage)
             }
+            .toolbar {
+                ToolbarItem() {
+                    Button("New Word") {
+                        startGame()
+                    }
+                }
+            }
         }
     }
     
     func addNewWord() {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         
-        guard answer.count > 0 else { return }
+        print(answer.count)
+        
+        guard answer.count > 2 else {
+            wordError(title: "Word too short", message: "Think of something longer!")
+            return
+        }
+        
+        guard answer != rootWord else {
+            wordError(title: "Nice try", message: "You can't just use the original word!")
+            return
+        }
         
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original")
@@ -65,12 +85,16 @@ struct ContentView: View {
             return
         }
         
+        score += answer.count
+        
         withAnimation {
             usedWords.insert(answer, at: 0)
         }
         
         newWord = ""
     }
+    
+    
     
     func startGame() {
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
