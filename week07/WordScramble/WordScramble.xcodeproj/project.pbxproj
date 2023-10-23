@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A893F872AE187EF00F8C38D /* ListTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893F862AE187EF00F8C38D /* ListTesting.swift */; };
 		3A893F892AE1894600F8C38D /* LoadingFromAppBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893F882AE1894600F8C38D /* LoadingFromAppBundle.swift */; };
+		3A893F8B2AE60F6E00F8C38D /* SpellChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893F8A2AE60F6E00F8C38D /* SpellChecker.swift */; };
+		3A893F8D2AE6125900F8C38D /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A893F8C2AE6125900F8C38D /* start.txt */; };
 		3ACB17582AE0DBB000054FA3 /* WordScrambleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB17572AE0DBB000054FA3 /* WordScrambleApp.swift */; };
 		3ACB175A2AE0DBB000054FA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB17592AE0DBB000054FA3 /* ContentView.swift */; };
 		3ACB175C2AE0DBB100054FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB175B2AE0DBB100054FA3 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		3A893F862AE187EF00F8C38D /* ListTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTesting.swift; sourceTree = "<group>"; };
 		3A893F882AE1894600F8C38D /* LoadingFromAppBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFromAppBundle.swift; sourceTree = "<group>"; };
+		3A893F8A2AE60F6E00F8C38D /* SpellChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellChecker.swift; sourceTree = "<group>"; };
+		3A893F8C2AE6125900F8C38D /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		3ACB17542AE0DBB000054FA3 /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACB17572AE0DBB000054FA3 /* WordScrambleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleApp.swift; sourceTree = "<group>"; };
 		3ACB17592AE0DBB000054FA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,8 +61,10 @@
 			children = (
 				3ACB17572AE0DBB000054FA3 /* WordScrambleApp.swift */,
 				3ACB17592AE0DBB000054FA3 /* ContentView.swift */,
+				3A893F8A2AE60F6E00F8C38D /* SpellChecker.swift */,
 				3A893F882AE1894600F8C38D /* LoadingFromAppBundle.swift */,
 				3A893F862AE187EF00F8C38D /* ListTesting.swift */,
+				3A893F8C2AE6125900F8C38D /* start.txt */,
 				3ACB175B2AE0DBB100054FA3 /* Assets.xcassets */,
 				3ACB175D2AE0DBB100054FA3 /* Preview Content */,
 			);
@@ -132,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ACB175F2AE0DBB100054FA3 /* Preview Assets.xcassets in Resources */,
+				3A893F8D2AE6125900F8C38D /* start.txt in Resources */,
 				3ACB175C2AE0DBB100054FA3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A893F8B2AE60F6E00F8C38D /* SpellChecker.swift in Sources */,
 				3ACB175A2AE0DBB000054FA3 /* ContentView.swift in Sources */,
 				3ACB17582AE0DBB000054FA3 /* WordScrambleApp.swift in Sources */,
 				3A893F892AE1894600F8C38D /* LoadingFromAppBundle.swift in Sources */,
