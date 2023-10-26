@@ -14,6 +14,7 @@
 		3A893FB52AEA1E7400F8C38D /* HotDogNotHotDog.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 3A893FB42AEA1E7400F8C38D /* HotDogNotHotDog.mlpackage */; };
 		3A893FB72AEA245900F8C38D /* SeeFoodClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3A893FB62AEA245900F8C38D /* SeeFoodClassifier.mlmodel */; };
 		3A893FBB2AEA2C0800F8C38D /* PhotoPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893FBA2AEA2C0800F8C38D /* PhotoPick.swift */; };
+		3A893FBD2AEA34E600F8C38D /* UItoBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893FBC2AEA34E600F8C38D /* UItoBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3A893FB42AEA1E7400F8C38D /* HotDogNotHotDog.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = HotDogNotHotDog.mlpackage; sourceTree = "<group>"; };
 		3A893FB62AEA245900F8C38D /* SeeFoodClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SeeFoodClassifier.mlmodel; sourceTree = "<group>"; };
 		3A893FBA2AEA2C0800F8C38D /* PhotoPick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPick.swift; sourceTree = "<group>"; };
+		3A893FBC2AEA34E600F8C38D /* UItoBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UItoBuffer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				3A893F762AE1853F00F8C38D /* SeeFoodApp.swift */,
 				3A893F782AE1853F00F8C38D /* ContentView.swift */,
+				3A893FBC2AEA34E600F8C38D /* UItoBuffer.swift */,
 				3A893FBA2AEA2C0800F8C38D /* PhotoPick.swift */,
 				3A893FB42AEA1E7400F8C38D /* HotDogNotHotDog.mlpackage */,
 				3A893FB62AEA245900F8C38D /* SeeFoodClassifier.mlmodel */,
@@ -148,6 +151,7 @@
 			files = (
 				3A893F792AE1853F00F8C38D /* ContentView.swift in Sources */,
 				3A893F772AE1853F00F8C38D /* SeeFoodApp.swift in Sources */,
+				3A893FBD2AEA34E600F8C38D /* UItoBuffer.swift in Sources */,
 				3A893FBB2AEA2C0800F8C38D /* PhotoPick.swift in Sources */,
 				3A893FB52AEA1E7400F8C38D /* HotDogNotHotDog.mlpackage in Sources */,
 				3A893FB72AEA245900F8C38D /* SeeFoodClassifier.mlmodel in Sources */,
