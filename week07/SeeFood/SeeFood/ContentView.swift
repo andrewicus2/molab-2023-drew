@@ -11,6 +11,7 @@
 import CoreML
 import Vision
 import SwiftUI
+import PhotosUI
 
 extension UIImage {
     
@@ -48,7 +49,8 @@ struct ContentView: View {
     
     @State private var classLabel: String = ""
     
-    @State private var imageSel = Int.random(in: 1..<11)
+    @State private var avatarItem: PhotosPickerItem?
+    @State private var imageSel: UIImage?
 
     
     init() {
@@ -58,26 +60,45 @@ struct ContentView: View {
             print(error)
         }
     }
-        
     var body: some View {
         VStack {
-            Image("food\(imageSel)")
-                .resizable()
-                .frame(width: 300, height: 200)
+            
+            if let imageSel {
+                Image(uiImage: imageSel)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 300, height: 200)
+            }
+            
             Button("Run") {
-                identifyImage(image: imageSel)
+                if let imageSel {
+                    identifyImage(uiImage: imageSel)
+                }
             }
                 .padding()
             Text("Image is \(classLabel)")
-            Button("New Image") {
-                imageSel = Int.random(in: 1..<11)
-            }
+            .padding()
         }
         .padding()
+        
+        VStack {
+            PhotosPicker(selection: $avatarItem, matching: .images) {
+                Text("Select Photo")
+            }
+
+        }
+        .onChange(of: avatarItem) { _ in
+            Task {
+                if let data = try? await avatarItem?.loadTransferable(type: Data.self) {
+                    imageSel = UIImage(data: data)
+                }
+
+                print("Failed")
+            }
+        }
     }
     
-    func identifyImage(image: Int) {
-        guard let uiImage = UIImage(named: "food\(image)") else { return }
+    func identifyImage(uiImage: UIImage) {
         guard let pixelBuffer = uiImage.toCVPixelBuffer() else { return }
 
         do {
@@ -88,6 +109,11 @@ struct ContentView: View {
         } catch {
             print(error)
         }
+    }
+    
+    
+    func picker() {
+        
     }
 }
 
