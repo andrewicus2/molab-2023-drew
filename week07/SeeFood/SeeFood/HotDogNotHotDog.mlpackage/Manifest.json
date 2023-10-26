@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "2D5CC6D1-484E-43B0-95F8-E14C1F53375E": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "81AFE4ED-3964-4369-8A8B-0D3F5C3C8E4A": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "HotDogNotHotDog.mlmodel",
+            "path": "com.apple.CoreML/HotDogNotHotDog.mlmodel"
+        },
+        "DA7E1552-4762-464A-84BA-3E16516F2A90": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        }
+    },
+    "rootModelIdentifier": "81AFE4ED-3964-4369-8A8B-0D3F5C3C8E4A"
+}

@@ -15,6 +15,8 @@
 		3A893FAB2AE8741300F8C38D /* CustomizingAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893FAA2AE8741300F8C38D /* CustomizingAnimations.swift */; };
 		3A893FAD2AE876A700F8C38D /* AnimatingBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893FAC2AE876A700F8C38D /* AnimatingBindings.swift */; };
 		3A893FAF2AE87D0200F8C38D /* ExplicitAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893FAE2AE87D0200F8C38D /* ExplicitAnimations.swift */; };
+		3A893FB12AE8D4D300F8C38D /* ControllingAnimationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893FB02AE8D4D300F8C38D /* ControllingAnimationStack.swift */; };
+		3A893FB32AE8D9DA00F8C38D /* AnimatingGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A893FB22AE8D9DA00F8C38D /* AnimatingGestures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		3A893FAA2AE8741300F8C38D /* CustomizingAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingAnimations.swift; sourceTree = "<group>"; };
 		3A893FAC2AE876A700F8C38D /* AnimatingBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingBindings.swift; sourceTree = "<group>"; };
 		3A893FAE2AE87D0200F8C38D /* ExplicitAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimations.swift; sourceTree = "<group>"; };
+		3A893FB02AE8D4D300F8C38D /* ControllingAnimationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllingAnimationStack.swift; sourceTree = "<group>"; };
+		3A893FB22AE8D9DA00F8C38D /* AnimatingGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingGestures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				3A893FAA2AE8741300F8C38D /* CustomizingAnimations.swift */,
 				3A893FAC2AE876A700F8C38D /* AnimatingBindings.swift */,
 				3A893FAE2AE87D0200F8C38D /* ExplicitAnimations.swift */,
+				3A893FB02AE8D4D300F8C38D /* ControllingAnimationStack.swift */,
+				3A893FB22AE8D9DA00F8C38D /* AnimatingGestures.swift */,
 				3A893FA82AE873F600F8C38D /* ImplicitAnimations.swift */,
 				3A893F9E2AE8726E00F8C38D /* Assets.xcassets */,
 				3A893FA02AE8726E00F8C38D /* Preview Content */,
@@ -153,8 +159,10 @@
 				3A893FAB2AE8741300F8C38D /* CustomizingAnimations.swift in Sources */,
 				3A893F9D2AE8726D00F8C38D /* ContentView.swift in Sources */,
 				3A893F9B2AE8726D00F8C38D /* AnimationsApp.swift in Sources */,
+				3A893FB32AE8D9DA00F8C38D /* AnimatingGestures.swift in Sources */,
 				3A893FAF2AE87D0200F8C38D /* ExplicitAnimations.swift in Sources */,
 				3A893FAD2AE876A700F8C38D /* AnimatingBindings.swift in Sources */,
+				3A893FB12AE8D4D300F8C38D /* ControllingAnimationStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
