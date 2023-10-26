@@ -11,7 +11,8 @@ import SwiftUI
 
 extension UIImage {
     
-    // https://www.hackingwithswift.com/whats-new-in-ios-11
+    //SRC: https://www.hackingwithswift.com/whats-new-in-ios-11
+    
     func toCVPixelBuffer() -> CVPixelBuffer? {
            
            let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary

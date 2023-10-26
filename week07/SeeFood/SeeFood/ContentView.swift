@@ -14,6 +14,7 @@
 
 // https://static.wikia.nocookie.net/silicon-valley/images/d/da/SeeFood.jpg/revision/latest?cb=20180504153534
 
+
 import CoreML
 import Vision
 import SwiftUI
@@ -153,6 +154,14 @@ struct ContentView: View {
         guard let pixelBuffer = uiImage.toCVPixelBuffer() else { return }
         
         do {
+//            
+//            let config = MLModelConfiguration()
+//
+//            let model = try VNCoreMLModel(for: HotDogNotHotDog(configuration: config).model)
+//            let request = VNCoreMLRequest(model: model, completionHandler: myResultsMethod)
+//            let handler = VNImageRequestHandler
+//            handler.perform(request)
+//            return prediction
             
             let result = try imageClassifier?.prediction(image: pixelBuffer)
             
