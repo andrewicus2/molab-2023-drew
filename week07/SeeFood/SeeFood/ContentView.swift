@@ -154,7 +154,7 @@ struct ContentView: View {
         guard let pixelBuffer = uiImage.toCVPixelBuffer() else { return }
         
         do {
-//            
+
 //            let config = MLModelConfiguration()
 //
 //            let model = try VNCoreMLModel(for: HotDogNotHotDog(configuration: config).model)
