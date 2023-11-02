@@ -5,6 +5,8 @@
 //  Created by drew on 11/1/23.
 //
 
+// https://www.youtube.com/watch?v=Dt5Y72HrQoo
+
 import Vision
 import AVFoundation
 import UIKit
@@ -37,7 +39,6 @@ extension ViewController {
         for observation in results where observation is VNRecognizedObjectObservation {
             guard let objectObservation = observation as? VNRecognizedObjectObservation else { continue }
             
-            // Transformations
             let objectBounds = VNImageRectForNormalizedRect(objectObservation.boundingBox, Int(screenRect.size.width), Int(screenRect.size.height))
             let transformedBounds = CGRect(x: objectBounds.minX, y: screenRect.size.height - objectBounds.maxY, width: objectBounds.maxX - objectBounds.minX, height: objectBounds.maxY - objectBounds.minY)
             
@@ -61,7 +62,7 @@ extension ViewController {
         let boxLayer = CALayer()
         boxLayer.frame = bounds
         boxLayer.borderWidth = 3.0
-        boxLayer.borderColor = CGColor.init(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+        boxLayer.borderColor = CGColor.init(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
         boxLayer.cornerRadius = 4
         return boxLayer
     }

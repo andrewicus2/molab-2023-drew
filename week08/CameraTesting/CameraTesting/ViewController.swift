@@ -5,6 +5,8 @@
 //  Created by drew on 11/1/23.
 //
 
+// https://www.neuralception.com/detection-app-tutorial-camera-feed/
+
 import UIKit
 import SwiftUI
 import AVFoundation
