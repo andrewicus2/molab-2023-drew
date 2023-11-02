@@ -7,38 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A26E0442AF2F7F10004E63D /* iExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0432AF2F7F10004E63D /* iExpenseApp.swift */; };
-		3A26E0462AF2F7F10004E63D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0452AF2F7F10004E63D /* ContentView.swift */; };
-		3A26E0482AF2F7F20004E63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A26E0472AF2F7F20004E63D /* Assets.xcassets */; };
-		3A26E04B2AF2F7F20004E63D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A26E04A2AF2F7F20004E63D /* Preview Assets.xcassets */; };
-		3A26E0532AF324F40004E63D /* UsingStateWithClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0522AF324F40004E63D /* UsingStateWithClasses.swift */; };
-		3A26E0572AF326380004E63D /* ShowingAndHidingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0562AF326380004E63D /* ShowingAndHidingViews.swift */; };
-		3A26E0592AF3280F0004E63D /* DeleteItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0582AF3280F0004E63D /* DeleteItems.swift */; };
-		3A26E05B2AF3296F0004E63D /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E05A2AF3296F0004E63D /* UserDefaultsStorage.swift */; };
-		3A26E05D2AF32D420004E63D /* ArchivingSwiftObjectsCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E05C2AF32D420004E63D /* ArchivingSwiftObjectsCodable.swift */; };
-		3A26E0612AF32F2E0004E63D /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0602AF32F2E0004E63D /* ExpenseItem.swift */; };
-		3A26E0632AF32F3C0004E63D /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0622AF32F3C0004E63D /* Expenses.swift */; };
-		3A26E0652AF332790004E63D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0642AF332790004E63D /* AddView.swift */; };
+		3A26E0732AF33CB00004E63D /* CameraTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0722AF33CB00004E63D /* CameraTestingApp.swift */; };
+		3A26E0752AF33CB00004E63D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26E0742AF33CB00004E63D /* ContentView.swift */; };
+		3A26E0772AF33CB00004E63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A26E0762AF33CB00004E63D /* Assets.xcassets */; };
+		3A26E07A2AF33CB00004E63D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A26E0792AF33CB00004E63D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A26E0402AF2F7F10004E63D /* iExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A26E0432AF2F7F10004E63D /* iExpenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseApp.swift; sourceTree = "<group>"; };
-		3A26E0452AF2F7F10004E63D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3A26E0472AF2F7F20004E63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A26E04A2AF2F7F20004E63D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3A26E0522AF324F40004E63D /* UsingStateWithClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingStateWithClasses.swift; sourceTree = "<group>"; };
-		3A26E0562AF326380004E63D /* ShowingAndHidingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingAndHidingViews.swift; sourceTree = "<group>"; };
-		3A26E0582AF3280F0004E63D /* DeleteItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteItems.swift; sourceTree = "<group>"; };
-		3A26E05A2AF3296F0004E63D /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
-		3A26E05C2AF32D420004E63D /* ArchivingSwiftObjectsCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivingSwiftObjectsCodable.swift; sourceTree = "<group>"; };
-		3A26E0602AF32F2E0004E63D /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
-		3A26E0622AF32F3C0004E63D /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
-		3A26E0642AF332790004E63D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		3A26E06F2AF33CB00004E63D /* CameraTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A26E0722AF33CB00004E63D /* CameraTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTestingApp.swift; sourceTree = "<group>"; };
+		3A26E0742AF33CB00004E63D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A26E0762AF33CB00004E63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A26E0792AF33CB00004E63D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3A26E03D2AF2F7F10004E63D /* Frameworks */ = {
+		3A26E06C2AF33CB00004E63D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,93 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A26E0372AF2F7F10004E63D = {
+		3A26E0662AF33CB00004E63D = {
 			isa = PBXGroup;
 			children = (
-				3A26E0422AF2F7F10004E63D /* iExpense */,
-				3A26E0412AF2F7F10004E63D /* Products */,
+				3A26E0712AF33CB00004E63D /* CameraTesting */,
+				3A26E0702AF33CB00004E63D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3A26E0412AF2F7F10004E63D /* Products */ = {
+		3A26E0702AF33CB00004E63D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A26E0402AF2F7F10004E63D /* iExpense.app */,
+				3A26E06F2AF33CB00004E63D /* CameraTesting.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A26E0422AF2F7F10004E63D /* iExpense */ = {
+		3A26E0712AF33CB00004E63D /* CameraTesting */ = {
 			isa = PBXGroup;
 			children = (
-				3A26E0512AF324E90004E63D /* Tutorials */,
-				3A26E0432AF2F7F10004E63D /* iExpenseApp.swift */,
-				3A26E0452AF2F7F10004E63D /* ContentView.swift */,
-				3A26E0642AF332790004E63D /* AddView.swift */,
-				3A26E0622AF32F3C0004E63D /* Expenses.swift */,
-				3A26E0602AF32F2E0004E63D /* ExpenseItem.swift */,
-				3A26E0472AF2F7F20004E63D /* Assets.xcassets */,
-				3A26E0492AF2F7F20004E63D /* Preview Content */,
+				3A26E0722AF33CB00004E63D /* CameraTestingApp.swift */,
+				3A26E0742AF33CB00004E63D /* ContentView.swift */,
+				3A26E0762AF33CB00004E63D /* Assets.xcassets */,
+				3A26E0782AF33CB00004E63D /* Preview Content */,
 			);
-			path = iExpense;
+			path = CameraTesting;
 			sourceTree = "<group>";
 		};
-		3A26E0492AF2F7F20004E63D /* Preview Content */ = {
+		3A26E0782AF33CB00004E63D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3A26E04A2AF2F7F20004E63D /* Preview Assets.xcassets */,
+				3A26E0792AF33CB00004E63D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		3A26E0512AF324E90004E63D /* Tutorials */ = {
-			isa = PBXGroup;
-			children = (
-				3A26E0522AF324F40004E63D /* UsingStateWithClasses.swift */,
-				3A26E0562AF326380004E63D /* ShowingAndHidingViews.swift */,
-				3A26E0582AF3280F0004E63D /* DeleteItems.swift */,
-				3A26E05A2AF3296F0004E63D /* UserDefaultsStorage.swift */,
-				3A26E05C2AF32D420004E63D /* ArchivingSwiftObjectsCodable.swift */,
-			);
-			path = Tutorials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A26E03F2AF2F7F10004E63D /* iExpense */ = {
+		3A26E06E2AF33CB00004E63D /* CameraTesting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A26E04E2AF2F7F20004E63D /* Build configuration list for PBXNativeTarget "iExpense" */;
+			buildConfigurationList = 3A26E07D2AF33CB00004E63D /* Build configuration list for PBXNativeTarget "CameraTesting" */;
 			buildPhases = (
-				3A26E03C2AF2F7F10004E63D /* Sources */,
-				3A26E03D2AF2F7F10004E63D /* Frameworks */,
-				3A26E03E2AF2F7F10004E63D /* Resources */,
+				3A26E06B2AF33CB00004E63D /* Sources */,
+				3A26E06C2AF33CB00004E63D /* Frameworks */,
+				3A26E06D2AF33CB00004E63D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = iExpense;
-			productName = iExpense;
-			productReference = 3A26E0402AF2F7F10004E63D /* iExpense.app */;
+			name = CameraTesting;
+			productName = CameraTesting;
+			productReference = 3A26E06F2AF33CB00004E63D /* CameraTesting.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3A26E0382AF2F7F10004E63D /* Project object */ = {
+		3A26E0672AF33CB00004E63D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					3A26E03F2AF2F7F10004E63D = {
+					3A26E06E2AF33CB00004E63D = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 3A26E03B2AF2F7F10004E63D /* Build configuration list for PBXProject "iExpense" */;
+			buildConfigurationList = 3A26E06A2AF33CB00004E63D /* Build configuration list for PBXProject "CameraTesting" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,50 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 3A26E0372AF2F7F10004E63D;
-			productRefGroup = 3A26E0412AF2F7F10004E63D /* Products */;
+			mainGroup = 3A26E0662AF33CB00004E63D;
+			productRefGroup = 3A26E0702AF33CB00004E63D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A26E03F2AF2F7F10004E63D /* iExpense */,
+				3A26E06E2AF33CB00004E63D /* CameraTesting */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A26E03E2AF2F7F10004E63D /* Resources */ = {
+		3A26E06D2AF33CB00004E63D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A26E04B2AF2F7F20004E63D /* Preview Assets.xcassets in Resources */,
-				3A26E0482AF2F7F20004E63D /* Assets.xcassets in Resources */,
+				3A26E07A2AF33CB00004E63D /* Preview Assets.xcassets in Resources */,
+				3A26E0772AF33CB00004E63D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3A26E03C2AF2F7F10004E63D /* Sources */ = {
+		3A26E06B2AF33CB00004E63D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A26E0592AF3280F0004E63D /* DeleteItems.swift in Sources */,
-				3A26E0462AF2F7F10004E63D /* ContentView.swift in Sources */,
-				3A26E0652AF332790004E63D /* AddView.swift in Sources */,
-				3A26E05B2AF3296F0004E63D /* UserDefaultsStorage.swift in Sources */,
-				3A26E0612AF32F2E0004E63D /* ExpenseItem.swift in Sources */,
-				3A26E0572AF326380004E63D /* ShowingAndHidingViews.swift in Sources */,
-				3A26E0442AF2F7F10004E63D /* iExpenseApp.swift in Sources */,
-				3A26E0632AF32F3C0004E63D /* Expenses.swift in Sources */,
-				3A26E05D2AF32D420004E63D /* ArchivingSwiftObjectsCodable.swift in Sources */,
-				3A26E0532AF324F40004E63D /* UsingStateWithClasses.swift in Sources */,
+				3A26E0752AF33CB00004E63D /* ContentView.swift in Sources */,
+				3A26E0732AF33CB00004E63D /* CameraTestingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3A26E04C2AF2F7F20004E63D /* Debug */ = {
+		3A26E07B2AF33CB00004E63D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		3A26E04D2AF2F7F20004E63D /* Release */ = {
+		3A26E07C2AF33CB00004E63D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -304,14 +264,14 @@
 			};
 			name = Release;
 		};
-		3A26E04F2AF2F7F20004E63D /* Debug */ = {
+		3A26E07E2AF33CB00004E63D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iExpense/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CameraTesting/Preview Content\"";
 				DEVELOPMENT_TEAM = 3M744A37XM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -325,7 +285,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = arb837.iExpense;
+				PRODUCT_BUNDLE_IDENTIFIER = arb837.CameraTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -333,14 +293,14 @@
 			};
 			name = Debug;
 		};
-		3A26E0502AF2F7F20004E63D /* Release */ = {
+		3A26E07F2AF33CB00004E63D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iExpense/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CameraTesting/Preview Content\"";
 				DEVELOPMENT_TEAM = 3M744A37XM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -354,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = arb837.iExpense;
+				PRODUCT_BUNDLE_IDENTIFIER = arb837.CameraTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -365,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A26E03B2AF2F7F10004E63D /* Build configuration list for PBXProject "iExpense" */ = {
+		3A26E06A2AF33CB00004E63D /* Build configuration list for PBXProject "CameraTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A26E04C2AF2F7F20004E63D /* Debug */,
-				3A26E04D2AF2F7F20004E63D /* Release */,
+				3A26E07B2AF33CB00004E63D /* Debug */,
+				3A26E07C2AF33CB00004E63D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A26E04E2AF2F7F20004E63D /* Build configuration list for PBXNativeTarget "iExpense" */ = {
+		3A26E07D2AF33CB00004E63D /* Build configuration list for PBXNativeTarget "CameraTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A26E04F2AF2F7F20004E63D /* Debug */,
-				3A26E0502AF2F7F20004E63D /* Release */,
+				3A26E07E2AF33CB00004E63D /* Debug */,
+				3A26E07F2AF33CB00004E63D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3A26E0382AF2F7F10004E63D /* Project object */;
+	rootObject = 3A26E0672AF33CB00004E63D /* Project object */;
 }

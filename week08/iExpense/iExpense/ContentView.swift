@@ -7,22 +7,72 @@
 
 import SwiftUI
 
-@Observable class User {
-    var firstName = "Bilbo"
-    var lastName = "Baggins"
-}
-
 struct ContentView: View {
-    @State private var user = User()
+    @State private var expenses = Expenses()
+    
+    @State private var showingAddExpense = false
     
     var body: some View {
-        VStack {
-            Text("Your name is \(user.firstName) \(user.lastName)")
-            
-            TextField("First name", text: $user.firstName)
-            TextField("First name", text: $user.lastName)
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(expenses.items) { item in
+                        if(item.type == "Personal"){
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(item.name)
+                                        .font(.headline)
+                                    Text(item.type)
+                                }
+                                
+                                Spacer()
+                                
+                                
+                                Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                                    .foregroundStyle(item.amount < 10 ? .green :  .red)
+                                    .fontWeight(item.amount < 100 ? .regular : .bold)
+                            }
+                        }
+                    }
+                    .onDelete(perform: removeItems)
+                } header: { Text("Personal")}
+
+                Section {
+                    ForEach(expenses.items) { item in
+                        if(item.type == "Business"){
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(item.name)
+                                        .font(.headline)
+                                    Text(item.type)
+                                }
+                                
+                                Spacer()
+                                
+                                
+                                Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                                    .foregroundStyle(item.amount < 10 ? .green :  .red)
+                                    .fontWeight(item.amount < 100 ? .regular : .bold)
+                            }
+                        }
+                    }
+                    .onDelete(perform: removeItems)
+                } header: { Text("Business")}
+            }
+            .navigationTitle("iExpense")
+            .toolbar {
+                Button("Add Expense", systemImage: "plus") {
+                    showingAddExpense = true
+                }
+            }
         }
-        .padding()
+        .sheet(isPresented: $showingAddExpense) {
+            AddView(expenses: expenses)
+        }
+    }
+    
+    func removeItems(at offsets: IndexSet) {
+        expenses.items.remove(atOffsets: offsets)
     }
 }
 
