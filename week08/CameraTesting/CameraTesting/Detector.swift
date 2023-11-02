@@ -5,7 +5,7 @@
 //  Created by drew on 11/1/23.
 //
 
-// https://www.youtube.com/watch?v=Dt5Y72HrQoo
+// https://www.neuralception.com/detection-app-tutorial-detector/
 
 import Vision
 import AVFoundation
