@@ -77,6 +77,7 @@ struct ContentView: View {
 
     // Attempt at animation
     @State private var rightAnswer = true
+    @State private var flagTappedID = 0
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     
@@ -95,17 +96,6 @@ struct ContentView: View {
                             counterWidget(title: "clock", value: timeRemaining, type: "Image")
                             Spacer()
                             counterWidget(title: "checkmark", value: score, type: "Image")
-
-//                            VStack{
-//                                Image(systemName:"checkmark")
-//                                Text("\(score)")
-//                                    .font(.system(size: 50, weight: .bold))
-//                                    .foregroundStyle(rightAnswer ? .green : .red)
-//                            }
-//                            .padding()
-//                            .frame(maxWidth: .infinity, maxHeight: 150)
-//                            .background(.thinMaterial)
-//                            .clipShape(RoundedRectangle(cornerRadius: 20))
                         }
                         .frame(maxWidth: .infinity)
                         
@@ -120,15 +110,15 @@ struct ContentView: View {
                             
                             ForEach(0..<3) { number in
                                 Button {
-                                    withAnimation(.spring(duration: 0.5, bounce: 0.2)) {
-                                        animationAmount += 360
-                                    }
+                                    flagTappedID = number
+                                    animationAmount += 360
                                     flagTapped(number)
+                                    print(flagTappedID)
                                 } label: {
                                     FlagImage(imgSrc: countries[number])
                                 }
-                                .rotation3DEffect(.degrees(animationAmount), axis: (x: 1.0, y: 0.0, z: 0.0)
-                                )
+                                .rotation3DEffect(number == flagTappedID && flagTappedID == correctAnswer ? .degrees(animationAmount) : .degrees(0), axis: (x: 1.0, y: 0.0, z: 0.0))
+                                .animation(.default, value: animationAmount)
                             }
                         }
                         .frame(maxWidth: .infinity)
