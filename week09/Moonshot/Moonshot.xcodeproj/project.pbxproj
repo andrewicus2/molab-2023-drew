@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3ADF91202AF6D8EA006EA960 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADF911F2AF6D8EA006EA960 /* Mission.swift */; };
 		3AE5E8112AF4A04C00A027A1 /* MoonshotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5E8102AF4A04C00A027A1 /* MoonshotApp.swift */; };
 		3AE5E8132AF4A04C00A027A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5E8122AF4A04C00A027A1 /* ContentView.swift */; };
 		3AE5E8152AF4A04C00A027A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5E8142AF4A04C00A027A1 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3ADF911F2AF6D8EA006EA960 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		3AE5E80D2AF4A04C00A027A1 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE5E8102AF4A04C00A027A1 /* MoonshotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotApp.swift; sourceTree = "<group>"; };
 		3AE5E8122AF4A04C00A027A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,10 +74,11 @@
 				3AE5E8282AF4AEE100A027A1 /* Tutorials */,
 				3AE5E8102AF4A04C00A027A1 /* MoonshotApp.swift */,
 				3AE5E8122AF4A04C00A027A1 /* ContentView.swift */,
-				3AE5E82A2AF4B09500A027A1 /* astronauts.json */,
 				3AE5E82D2AF4B10300A027A1 /* Astronaut.swift */,
 				3AE5E82F2AF4B18D00A027A1 /* Bundle-Decodable.swift */,
+				3ADF911F2AF6D8EA006EA960 /* Mission.swift */,
 				3AE5E8292AF4B09500A027A1 /* missions.json */,
+				3AE5E82A2AF4B09500A027A1 /* astronauts.json */,
 				3AE5E8142AF4A04C00A027A1 /* Assets.xcassets */,
 				3AE5E8162AF4A04C00A027A1 /* Preview Content */,
 			);
@@ -182,6 +185,7 @@
 				3AE5E8302AF4B18D00A027A1 /* Bundle-Decodable.swift in Sources */,
 				3AE5E8212AF4A8E200A027A1 /* ScrollTutorial.swift in Sources */,
 				3AE5E8112AF4A04C00A027A1 /* MoonshotApp.swift in Sources */,
+				3ADF91202AF6D8EA006EA960 /* Mission.swift in Sources */,
 				3AE5E81F2AF4A50800A027A1 /* ResizingImages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

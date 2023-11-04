@@ -7,6 +7,9 @@
 
 // https://www.hackingwithswift.com/guide/ios-swiftui/2/3/challenge
 
+// TODO: Clean Code
+// TODO: Animate right/wrong answers
+
 import SwiftUI
 
 
