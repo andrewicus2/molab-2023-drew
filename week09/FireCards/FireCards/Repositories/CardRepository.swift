@@ -36,6 +36,8 @@ import FirebaseFirestoreSwift
 import Combine
 
 
+// https://www.kodeco.com/11609977-getting-started-with-cloud-firestore-and-swiftui
+
 class CardRepository: ObservableObject {
   
   private let path: String = "cards"
