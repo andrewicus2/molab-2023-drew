@@ -16,7 +16,6 @@
 		3A5A03DC2AFCA1A8002E0A71 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A03DB2AFCA1A8002E0A71 /* MessageBubble.swift */; };
 		3A5A03DE2AFCAB87002E0A71 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A03DD2AFCAB87002E0A71 /* Extensions.swift */; };
 		3A5A03E02AFCACD2002E0A71 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A03DF2AFCACD2002E0A71 /* MessageField.swift */; };
-		3A5A03E22AFCAECF002E0A71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A5A03E12AFCAECF002E0A71 /* GoogleService-Info.plist */; };
 		3A5A03E52AFCAF77002E0A71 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5A03E42AFCAF77002E0A71 /* FirebaseAnalytics */; };
 		3A5A03E72AFCAF77002E0A71 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5A03E62AFCAF77002E0A71 /* FirebaseAnalyticsOnDeviceConversion */; };
 		3A5A03E92AFCAF77002E0A71 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5A03E82AFCAF77002E0A71 /* FirebaseAnalyticsSwift */; };
@@ -45,6 +44,7 @@
 		3A5A04172AFCAF77002E0A71 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5A04162AFCAF77002E0A71 /* FirebaseStorage */; };
 		3A5A04192AFCAF77002E0A71 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5A04182AFCAF77002E0A71 /* FirebaseStorageCombine-Community */; };
 		3A5A041B2AFCB2B8002E0A71 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A041A2AFCB2B8002E0A71 /* MessagesManager.swift */; };
+		3A5A041D2AFD2228002E0A71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A5A041C2AFD2228002E0A71 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +58,8 @@
 		3A5A03DB2AFCA1A8002E0A71 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		3A5A03DD2AFCAB87002E0A71 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3A5A03DF2AFCACD2002E0A71 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
-		3A5A03E12AFCAECF002E0A71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A5A041A2AFCB2B8002E0A71 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		3A5A041C2AFD2228002E0A71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 			children = (
 				3A5A03C72AFC9EFA002E0A71 /* ChatAppDemoApp.swift */,
 				3A5A03C92AFC9EFA002E0A71 /* ContentView.swift */,
-				3A5A03E12AFCAECF002E0A71 /* GoogleService-Info.plist */,
+				3A5A041C2AFD2228002E0A71 /* GoogleService-Info.plist */,
 				3A5A03D82AFCA13C002E0A71 /* Models */,
 				3A5A03D52AFC9F82002E0A71 /* Components */,
 				3A5A03CB2AFC9EFB002E0A71 /* Assets.xcassets */,
@@ -250,7 +250,7 @@
 			files = (
 				3A5A03CF2AFC9EFB002E0A71 /* Preview Assets.xcassets in Resources */,
 				3A5A03CC2AFC9EFB002E0A71 /* Assets.xcassets in Resources */,
-				3A5A03E22AFCAECF002E0A71 /* GoogleService-Info.plist in Resources */,
+				3A5A041D2AFD2228002E0A71 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
