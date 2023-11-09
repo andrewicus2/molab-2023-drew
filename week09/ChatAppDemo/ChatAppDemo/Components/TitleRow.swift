@@ -45,5 +45,5 @@ struct TitleRow: View {
 
 #Preview {
     TitleRow()
-        .background(Color("Blue"))
+        .background(Color("LtBlue"))
 }

@@ -44,6 +44,7 @@
 		3A5A04152AFCAF77002E0A71 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5A04142AFCAF77002E0A71 /* FirebaseRemoteConfigSwift */; };
 		3A5A04172AFCAF77002E0A71 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5A04162AFCAF77002E0A71 /* FirebaseStorage */; };
 		3A5A04192AFCAF77002E0A71 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5A04182AFCAF77002E0A71 /* FirebaseStorageCombine-Community */; };
+		3A5A041B2AFCB2B8002E0A71 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A041A2AFCB2B8002E0A71 /* MessagesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3A5A03DD2AFCAB87002E0A71 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3A5A03DF2AFCACD2002E0A71 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		3A5A03E12AFCAECF002E0A71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A5A041A2AFCB2B8002E0A71 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				3A5A03CB2AFC9EFB002E0A71 /* Assets.xcassets */,
 				3A5A03CD2AFC9EFB002E0A71 /* Preview Content */,
 				3A5A03DD2AFCAB87002E0A71 /* Extensions.swift */,
+				3A5A041A2AFCB2B8002E0A71 /* MessagesManager.swift */,
 			);
 			path = ChatAppDemo;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				3A5A03CA2AFC9EFA002E0A71 /* ContentView.swift in Sources */,
 				3A5A03DE2AFCAB87002E0A71 /* Extensions.swift in Sources */,
 				3A5A03DA2AFCA14B002E0A71 /* Message.swift in Sources */,
+				3A5A041B2AFCB2B8002E0A71 /* MessagesManager.swift in Sources */,
 				3A5A03E02AFCACD2002E0A71 /* MessageField.swift in Sources */,
 				3A5A03DC2AFCA1A8002E0A71 /* MessageBubble.swift in Sources */,
 				3A5A03C82AFC9EFA002E0A71 /* ChatAppDemoApp.swift in Sources */,
