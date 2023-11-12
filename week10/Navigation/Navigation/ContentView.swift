@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct Student: Hashable {
-    var id = UUID()
-    var name: String
-    var age: Int
-}
-
 struct ContentView: View {
     var body: some View {
         NavigationStack {
