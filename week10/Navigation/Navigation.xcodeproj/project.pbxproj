@@ -15,6 +15,9 @@
 		3AFCD80A2B00406400A7182C /* ProgrammaticNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFCD8092B00406400A7182C /* ProgrammaticNavigation.swift */; };
 		3AFCD80C2B00415D00A7182C /* NavigationToDiffData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFCD80B2B00415D00A7182C /* NavigationToDiffData.swift */; };
 		3AFCD80E2B01452900A7182C /* ReturnToRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFCD80D2B01452900A7182C /* ReturnToRootView.swift */; };
+		3AFCD8102B03200700A7182C /* CustomizingTheNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFCD80F2B03200700A7182C /* CustomizingTheNavBar.swift */; };
+		3AFCD8122B03219300A7182C /* PlacingNavBarButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFCD8112B03219300A7182C /* PlacingNavBarButtons.swift */; };
+		3AFCD8142B03227E00A7182C /* EditableNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFCD8132B03227E00A7182C /* EditableNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		3AFCD8092B00406400A7182C /* ProgrammaticNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticNavigation.swift; sourceTree = "<group>"; };
 		3AFCD80B2B00415D00A7182C /* NavigationToDiffData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToDiffData.swift; sourceTree = "<group>"; };
 		3AFCD80D2B01452900A7182C /* ReturnToRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnToRootView.swift; sourceTree = "<group>"; };
+		3AFCD80F2B03200700A7182C /* CustomizingTheNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingTheNavBar.swift; sourceTree = "<group>"; };
+		3AFCD8112B03219300A7182C /* PlacingNavBarButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacingNavBarButtons.swift; sourceTree = "<group>"; };
+		3AFCD8132B03227E00A7182C /* EditableNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				3A08D6F92AF9E0F700078E8C /* NavigationApp.swift */,
 				3A08D6FB2AF9E0F700078E8C /* ContentView.swift */,
 				3AFCD80D2B01452900A7182C /* ReturnToRootView.swift */,
+				3AFCD80F2B03200700A7182C /* CustomizingTheNavBar.swift */,
+				3AFCD8112B03219300A7182C /* PlacingNavBarButtons.swift */,
+				3AFCD8132B03227E00A7182C /* EditableNavBar.swift */,
 				3AFCD80B2B00415D00A7182C /* NavigationToDiffData.swift */,
 				3AFCD8092B00406400A7182C /* ProgrammaticNavigation.swift */,
 				3AFCD8072B00405000A7182C /* NavigationDestinationVid.swift */,
@@ -151,8 +160,11 @@
 			files = (
 				3AFCD80C2B00415D00A7182C /* NavigationToDiffData.swift in Sources */,
 				3AFCD80E2B01452900A7182C /* ReturnToRootView.swift in Sources */,
+				3AFCD8142B03227E00A7182C /* EditableNavBar.swift in Sources */,
 				3AFCD8082B00405000A7182C /* NavigationDestinationVid.swift in Sources */,
 				3AFCD80A2B00406400A7182C /* ProgrammaticNavigation.swift in Sources */,
+				3AFCD8122B03219300A7182C /* PlacingNavBarButtons.swift in Sources */,
+				3AFCD8102B03200700A7182C /* CustomizingTheNavBar.swift in Sources */,
 				3A08D6FC2AF9E0F700078E8C /* ContentView.swift in Sources */,
 				3A08D6FA2AF9E0F700078E8C /* NavigationApp.swift in Sources */,
 			);
