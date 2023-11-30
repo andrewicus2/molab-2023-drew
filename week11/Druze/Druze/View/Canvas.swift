@@ -39,7 +39,6 @@ struct Canvas: View {
     func selected(stackItem: StackItem) {
         canvasModel.selected?.selected = false
         canvasModel.selected = stackItem
-        canvasModel.selected?.selected = true
     }
     
     func getIndex(stackItem: StackItem) -> Int {
@@ -78,7 +77,22 @@ struct CanvasSubView<Content: View>: View {
     @State var hapticScale: CGFloat = 1
     
     var body: some View {
-        content
+        ZStack {
+            if let contentR = stackItem.rect {
+                contentR
+                    .fill($stackItem.backgroundColor.wrappedValue ?? Color.black)
+                    .frame(width: 200, height: 200)
+            } else if let contentI = stackItem.image {
+                contentI
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: UIScreen.main.bounds.width / 1.5)
+            } else if let contentT = stackItem.text {
+                contentT
+                    .font(.title3)
+                    .foregroundStyle(.black)
+            }
+        }
             .rotationEffect(stackItem.rotation)
             .scaleEffect(stackItem.scale < 0.4 ? 0.4 : stackItem.scale)
             .scaleEffect(hapticScale)

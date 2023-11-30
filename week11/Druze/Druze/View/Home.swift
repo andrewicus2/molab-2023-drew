@@ -5,7 +5,7 @@
 //  Created by drew on 11/24/23.
 //
 
-//  Tutorial: https://www.youtube.com/watch?v=zvdHmnp8sLA
+//  src: https://www.youtube.com/watch?v=zvdHmnp8sLA
 
 import SwiftUI
 
@@ -18,15 +18,17 @@ struct Home: View {
             Color.black
                 .ignoresSafeArea()
             
-            // MARK: Canvas View
+            // Canvas display
             Canvas()
                 .environmentObject(canvasModel)
                 .onTapGesture(count: 1) {
                     canvasModel.selected?.selected = false
                     canvasModel.selected = nil
                 }
+                .ignoresSafeArea()
             
-            if(canvasModel.selected != nil) {
+            // Selected Tools
+            if let active = canvasModel.selected {
                 HStack() {
                     Button {
                         deleteConfirmation = true
@@ -48,6 +50,14 @@ struct Home: View {
                         Image(systemName: "square.2.layers.3d.bottom.filled")
                             .font(.title3)
                     }
+                    if(active.type == "rect") {
+                        Button {
+                            canvasModel.changeActiveColor(color: .red)
+                        } label: {
+                            Image(systemName: "paintbrush.fill")
+                                .font(.title3)
+                        }
+                    }
                 }
                 .foregroundStyle(.white)
                 .padding()
@@ -55,20 +65,20 @@ struct Home: View {
                 .frame(maxHeight: .infinity, alignment: .bottom)
             }
             
-            // MARK: Canvas Actions
-            HStack() {
+            // Toolbar            
+            HStack {
                 
-                
-                HStack {
+                Spacer()
+
+                HStack(spacing: 24) {
                     Button {
                         canvasModel.showImagePicker.toggle()
                     } label: {
                         Image(systemName: "photo")
                             .font(.title3)
                     }
-                    Spacer()
                     Button {
-                        
+                        canvasModel.addTextToStack()
                     } label: {
                         Image(systemName: "character.textbox")
                             .font(.title3)

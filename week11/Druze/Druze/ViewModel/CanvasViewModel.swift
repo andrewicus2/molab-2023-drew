@@ -27,19 +27,23 @@ class CanvasViewModel: ObservableObject {
         // Creating SwiftUI Image View and Appending into stack
         
         let imageView = Image(uiImage: image)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: UIScreen.main.bounds.width / 1.5)
         
-        stack.append(StackItem(view: AnyView(imageView)))
+        stack.append(StackItem(view: AnyView(imageView), type: "img", image: imageView))
     }
+    
+    // Drew's Code
     
     func addShapeToStack() {
         let rect = Rectangle()
-            .fill(Color.blue)
-            .frame(width: 200, height: 200)
         
-        stack.append(StackItem(view: AnyView(rect)))
+        stack.append(StackItem(view: AnyView(rect), type: "rect", rect: rect))
+    }
+    
+    func addTextToStack() {
+        let text = Text("Lorem Ipsum")
+ 
+        
+        stack.append(StackItem(view: AnyView(text), type: "text", text: text))
     }
     
     func getActiveIndex() -> Int {
@@ -62,5 +66,12 @@ class CanvasViewModel: ObservableObject {
     
     func moveActiveToBack() {
         stack.insert(stack.remove(at: getActiveIndex()), at: 0)
+    }
+    
+    func changeActiveColor(color: Color) {
+        if let active = selected {
+            active.backgroundColor = Color.red
+        }
+        selected.backgroundColor = Color.red
     }
 }
