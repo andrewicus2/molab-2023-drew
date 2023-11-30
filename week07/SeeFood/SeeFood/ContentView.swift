@@ -114,7 +114,6 @@ struct ContentView: View {
                 
                 VStack {
                     PhotosPicker(selection: $imageItem, matching: .images) {
-                        
                         VStack {
                             Image(systemName: "square.and.arrow.up.circle.fill")
                                 .resizable()
