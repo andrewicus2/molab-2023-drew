@@ -5,6 +5,8 @@
 //  Created by drew on 11/24/23.
 //
 
+//  Tutorial: https://www.youtube.com/watch?v=zvdHmnp8sLA
+
 import SwiftUI
 
 struct Home: View {
@@ -65,6 +67,12 @@ struct Home: View {
                             .font(.title3)
                     }
                     Spacer()
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "character.textbox")
+                            .font(.title3)
+                    }
 
                     Button {
                         canvasModel.addShapeToStack()

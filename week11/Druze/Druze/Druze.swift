@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Dragging_TextApp: App {
+struct Druze: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
