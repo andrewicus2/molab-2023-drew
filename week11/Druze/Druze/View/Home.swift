@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Home: View {
     @StateObject var canvasModel: CanvasViewModel = .init()
+    @State private var deleteConfirmation: Bool = false
+    
     var body: some View {
         ZStack {
             Color.black
@@ -25,7 +27,7 @@ struct Home: View {
             if(canvasModel.selected != nil) {
                 HStack() {
                     Button {
-                        canvasModel.deleteActive()
+                        deleteConfirmation = true
                     } label: {
                         Image(systemName: "trash")
                             .font(.title3)
@@ -53,14 +55,7 @@ struct Home: View {
             
             // MARK: Canvas Actions
             HStack() {
-                Button {
-                    
-                } label: {
-                    Image(systemName: "xmark")
-                        .font(.title3)
-                }
                 
-                Spacer()
                 
                 HStack {
                     Button {
@@ -69,6 +64,8 @@ struct Home: View {
                         Image(systemName: "photo")
                             .font(.title3)
                     }
+                    Spacer()
+
                     Button {
                         canvasModel.addShapeToStack()
                     } label: {
@@ -100,6 +97,10 @@ struct Home: View {
             }
         } content: {
             ImagePicker(showPicker: $canvasModel.showImagePicker, imageData: $canvasModel.imageData)
+        }
+        .alert("Are you sure you want to delete this?", isPresented: $deleteConfirmation) {
+            Button("Delete", role: .destructive) { canvasModel.deleteActive() }
+            Button("Cancel", role: .cancel) { }
         }
     }
 }
